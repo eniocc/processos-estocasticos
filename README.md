@@ -1,2 +1,2 @@
 # processos-estocasticos
-Disciplina de Processo Estocásticos
+Disciplina de Processos Estocásticos
