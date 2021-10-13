@@ -7,11 +7,11 @@
 import numpy as np
 from scipy import linalg
 
-# Questão 01A
 from Plot import Plot
 
 TOTAL_SAMPLES = 5000
 
+# Questão 01A
 matriz_covariancia_xy = np.array([[4, 0], [0, 9]], dtype=np.float64)
 esperancaX = 1
 esperancaY = 2
@@ -51,11 +51,12 @@ Plot.plot_scatter(s1[:, 0], s1[:, 1], "Gráfico de Dispersão")
 # Questão 02A
 cwr = np.array([[4, 1.5], [1.5, 9]])
 x2 = np.random.randn(2, TOTAL_SAMPLES)
-matrix_transferencia = np.transpose(linalg.cholesky(np.transpose(cwr)))
+matrix_transferencia = np.transpose(linalg.cholesky(cwr))
 s2 = np.transpose(np.dot(matrix_transferencia, x2))
+# print(f"02 A -> {s2}")
 
 # Questão 02B
-Plot.plot_scatter(s2[:, 0], s2[:, 1], "Gráfico de Dispersão")
+Plot.plot_scatter(s2[:, 0], s2[:, 1], "Gráfico de Dispersão - Questão 02 B")
 
 # Questão 02C
 
