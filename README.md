@@ -1,2 +1,2 @@
-# processos-estocasticos
+# Mestrado
 Disciplina de Processos Estocásticos
